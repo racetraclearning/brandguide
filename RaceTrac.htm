@@ -181,7 +181,7 @@
 			</ul>
 		</div>
 -->
-		<div class="color-pane active" id="hex">
+		<div class="color-pane" id="hex" style="display:block;">
 			<div class="row">
 				<div class="col">
 					<div class="frame palette">
@@ -439,6 +439,7 @@
 	</div>
 -->
 
+<!--
 	<script>
 		function onTabClick(event) {
 			let activeTabs = document.querySelectorAll('.active');
@@ -457,6 +458,7 @@
 
 		element.addEventListener('click', onTabClick, false);
 	</script>
+-->
 
 	<script>
 		var span = document.querySelector(".copyable");
@@ -696,80 +698,197 @@
 </section>
 <section>
 	<div class="content">
-		<div class="u-text-center content">
-			<h3 class="uppercase">Voice Elements</h3>
-			<h6 class="font-alt font-normal">Our voice is who we are as a team and expresses our personality. It's the constant across all communications and everything we create.<br>
-			</h6>
-		</div>
 		<div class="row">
-			<div class="col frame" style="margin-right:20px;">
-				<div class="frame-header">
-					<div class="frame__title u-text-center"><strong>Respectful</strong></div>
-					<div class="frame__subtitle u-text-center"><br>
-- We respect others time and values. <br>
-<br>
-- We acknowledge and utilize others <br>
-knowledge and strengths.</div>
-				</div>
-				<div class="frame__body">
-					<!-- Insert other controls here -->
-				</div>
-				<div class="frame__footer">
-					<!-- Insert some controls here -->
-				</div>
+			<div class="col-4">
+				<h2 style="margin-top:50%">Voice Elements</h2>
+				<h6 class="font-alt font-normal">Our voice is who we are as a team and expresses our personality. It's the constant across all communications and everything we create.
+				</h6>
 			</div>
-			<div class="col frame">
-				<div class="frame-header">
-					<div class="frame__title u-text-center"><strong>Empowering</strong></div>
-					<div class="frame__subtitle u-text-center"><br>
-- We motivate others to constantly <br>
-grow and inspire others. <br>
-<br>
-- We are confident in our skills and abilities to help <br>others learn and develop.</div>
-				</div>
-				<div class="frame__body">
-					<!-- Insert other controls here -->
-				</div>
-				<div class="frame__footer">
-					<!-- Insert some controls here -->
-				</div>
+			<div class="col-1">
 			</div>
-		</div>
-		<div class="row">
-			<div class="col frame" style="margin-right:20px;">
-				<div class="frame-header">
-					<div class="frame__title u-text-center"><strong>Effective</strong></div>
-					<div class="frame__subtitle u-text-center"><br>
-						- We make learning content relevant and applicable allowing learners to use the skills immediately. <br>
-						<br>
-- We are intrigued by challenges and always <br>
-willing to learn.</div>
+			<div class="col-7">
+				<div class="drop"> 
+<!--
+					<style>
+					.transition{
+					  transition: all 0.25s ease-in-out
+					}
+					.flipIn{
+					  animation: flipdown 0.5s ease both
+					}
+					.no-select{
+					  -webkit-tap-highlight-color: rgba(0,0,0,0)
+					  -webkit-touch-callout: none
+					  -webkit-user-select: none
+					  -khtml-user-select: none
+					  -moz-user-select: none
+					  -ms-user-select: none
+					  user-select: none
+					}	
+					ul {
+					  list-style: none;
+					  perspective: 900;
+					  padding: 0;
+					  margin: 0;
+					}
+					ul li {
+					  position: relative;
+					  padding: 0;
+					  margin: 0;
+					  padding-bottom: 4px;
+					  padding-top: 18px;
+					  border-top: 1px dotted #dce7eb;
+					}
+					ul li:nth-of-type(1) {
+					  animation-delay: 0.5s;
+					}
+					ul li:nth-of-type(2) {
+					  animation-delay: 0.75s;
+					}
+					ul li:nth-of-type(3) {
+					  animation-delay: 1s;
+					}
+					ul li:last-of-type {
+					  padding-bottom: 0;
+					}
+					ul li i {
+					  position: absolute;
+					  transform: translate(-6px, 0);
+					  margin-top: 16px;
+					  right: 0;
+					}
+					ul li i:before, ul li i:after {
+					  content: "";
+					  position: absolute;
+					  background-color: #ff6873;
+					  width: 3px;
+					  height: 9px;
+					}
+					ul li i:before {
+					  transform: translate(-2px, 0) rotate(45deg);
+					}
+					ul li i:after {
+					  transform: translate(2px, 0) rotate(-45deg);
+					}
+					ul li input[type=checkbox] {
+					  position: absolute;
+					  cursor: pointer;
+					  width: 100%;
+					  height: 100%;
+					  z-index: 1;
+					  opacity: 0;
+					}
+					ul li input[type=checkbox]:checked ~ p {
+					  margin-top: 0;
+					  max-height: 0;
+					  opacity: 0;
+					  transform: translate(0, 50%);
+					}
+					ul li input[type=checkbox]:checked ~ i:before {
+					  transform: translate(2px, 0) rotate(45deg);
+					}
+					ul li input[type=checkbox]:checked ~ i:after {
+					  transform: translate(-2px, 0) rotate(-45deg);
+					}
+
+					@keyframes flipdown {
+					  0% {
+						opacity: 0;
+						transform-origin: top center;
+						transform: rotateX(-90deg);
+					  }
+					  5% {
+						opacity: 1;
+					  }
+					  80% {
+						transform: rotateX(8deg);
+					  }
+					  83% {
+						transform: rotateX(6deg);
+					  }
+					  92% {
+						transform: rotateX(-3deg);
+					  }
+					  100% {
+						transform-origin: top center;
+						transform: rotateX(0deg);
+					  }
+					}
+					</style>
+-->
+					<ul>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h1 style="color:#e34c57;font-weight:bold;">Respectful</h1>
+				<h6>• We respect others time and values.<br>
+					• We acknowledge and utilize others knowledge and strengths.</h6>
+  </li>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h1>Empowering</h1>
+				<h6>
+					• We motivate others to constantly grow and inspire others.<br>
+						• We are confident in our skills and abilities to help others learn and develop.
+				</h6>
+  </li>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h1>Effective</h1>
+				<h6>• We make learning content relevant and applicable allowing learners to use the skills immediately.<br>
+				• We are intrigued by challenges and always willing to learn.
+				</h6>
+  </li>
+	<li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h1>Engaging</h1>
+				<h6>• We provide an engaging, positive and safe learning-centered environment.<br>
+				• We incorporate all types of learning styles into our designs.
+				</h6>
+  </li>
+					</ul>
 				</div>
-				<div class="frame__body">
-					<!-- Insert other controls here -->
-				</div>
-				<div class="frame__footer">
-					<!-- Insert some controls here -->
-				</div>
+<!--
+				<h1 style="color:#e34c57;font-weight:bold;">Respectful</h1>
+<h6></h6>
+					<ul>
+						<li>We respect others time and values.</li>
+						<li>We acknowledge and utilize others knowledge and strengths.</li>
+					</ul>
+				</h6>
+				<hr>
+				<h1>Empowering</h1>
+				<h6>
+					<ul>
+						<li>We motivate others to constantly grow and inspire others.</li>
+						<li>We are confident in our skills and abilities to help others learn and develop.</li>
+					</ul>
+				</h6>
+				<hr>
+				<h1>Effective</h1>
+				<h6>
+					<ul>
+						<li>We make learning content relevant and applicable allowing learners to use the skills immediately.</li>
+						<li>We are intrigued by challenges and always willing to learn.</li>
+					</ul>
+				</h6>
+				<hr>
+				<h1>Engaging</h1>
+				<h6>
+					<ul>
+						<li>We provide an engaging, positive and safe learning-centered environment.</li>
+						<li>We incorporate all types of learning styles into our designs.</li>
+					</ul>
+				</h6>
+				<hr>
 			</div>
-			<div class="col frame">
-				<div class="frame-header">
-					<div class="frame__title u-text-center"><strong>Engaging</strong></div>
-					<div class="frame__subtitle u-text-center"><br>
-						- We provide an engaging, positive and safe <br>
-						learning-centered environment.<br>
-						<br>
-						- We incorporate all types of learning styles <br>
-into our designs.</div>
-				</div>
-				<div class="frame__body">
-					<!-- Insert other controls here -->
-				</div>
-				<div class="frame__footer">
-					<!-- Insert some controls here -->
-				</div>
-			</div>
+-->
 			
+			
+			</div>
 		</div>
 		<div class="divider"></div>
 	</div>
@@ -781,59 +900,37 @@ into our designs.</div>
 	
 			<div class="row">
 			<div class="col frame" style="margin-right:20px;">
-				<div class="frame-header">
-					<div class="frame__title u-text-center"><strong>Job Aids</strong></div> <br>
-					<div class="frame__subtitle u-text-center">Informative <br> Concise <br> Direct</div>
-					
-				</div>
-				<div class="frame__body">
-					<!-- Insert other controls here -->
-				</div>
-				<div class="frame__footer">
-					<!-- Insert some controls here -->
+				<div class="frame-header textanim-container">
+					<div class="textanim-title u-text-center"><strong>Job Aids</strong></div> <br>
+					<div class="frame__subtitle textanim-hidden u-text-center">Informative <br> Concise <br> Direct</div>
 				</div>
 			</div>
+				
 			<div class="col frame" style="margin-right:20px;">
-				<div class="frame-header">
-					<div class="frame__title u-text-center"><strong>E-Learning</strong></div>
+				<div class="frame-header textanim-container">
+					<div class="textanim-title u-text-center"><strong>E-Learning</strong></div>
 				<br>
-					<div class="frame__subtitle u-text-center">Playful <br>Upbeat <br> Informative</div>
-				</div>
-				<div class="frame__body">
-					<!-- Insert other controls here -->
-				</div>
-				<div class="frame__footer">
-					<!-- Insert some controls here -->
+					<div class="frame__subtitle textanim-hidden u-text-center">Playful <br>Upbeat <br> Informative</div>
 				</div>
 			</div>
+				
 			<div class="col frame" style="margin-right:20px;">
-				<div class="frame-header">
-					<div class="frame__title u-text-center"><strong>ILT</strong></div>
+				<div class="frame-header textanim-container">
+					<div class="textanim-title u-text-center"><strong>ILT</strong></div>
 						<br>
-					<div class="frame__subtitle u-text-center">
+					<div class="frame__subtitle textanim-hidden u-text-center">
 						Upbeat <br> Inclusive <br> Authentic
 					</div>
 				</div>
-				<div class="frame__body">
-					<!-- Insert other controls here -->
-				</div>
-				<div class="frame__footer">
-					<!-- Insert some controls here -->
-				</div>
 			</div>
+				
 			<div class="col frame">
-				<div class="frame-header">
-					<div class="frame__title u-text-center"><strong>Video</strong></div>
+				<div class="frame-header textanim-container">
+					<div class="textanim-title u-text-center"><strong>Video</strong></div>
 					<br>
-					<div class="frame__subtitle u-text-center">Clear <br> Concise <br> Authentic <br></div>
+					<div class="frame__subtitle textanim-hidden u-text-center">Clear <br> Concise <br> Authentic <br></div>
 				</div>
-				<div class="frame__body">
-					<!-- Insert other controls here -->
 				</div>
-				<div class="frame__footer">
-					<!-- Insert some controls here -->
-				</div>
-			</div>
 		</div>
 	</div>
 </section>
@@ -846,34 +943,290 @@ into our designs.</div>
 			<h3 class="uppercase">Creative Process</h3>
 			<h6 class="font-alt font-normal">Our creative process is based off of the ADDIE model. It is dynamic, flexible and ensures that we are building effective training.</h6>
 		</div>
+		<div class="tab-container tabs-classic tabs-fill tabs-center" id="process-tabs">
+			<ul>
+				<li class="active"><a id="#analysis"><em class="fa fa-search" style="padding-right:5px;"></em> Analysis</a></li>
+				<li><a id="#design"><em class="fas fa-bullseye" style="padding-right:5px;"></em>Design</a></li>
+				<li><a id="#development"><em class="far fa-edit" style="padding-right:5px;"></em>Development</a></li>
+				<li><a id="#implementation"><em class="far fa-user" style="padding-right:5px;"></em>Implementation</a></li>
+				<li><a id="#evaluation"><em class="far fa-thumbs-up" style="padding-right:5px;"></em>Evaluation</a></li>
+			</ul>
+		</div>
+		
+		<div class="process-pane active" id="analysis">
 		<div class="row">
-	
+			<div class="cont" style="margin-right:20px;">
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Needs</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>First, the instructional problem is clarified. We should clearly understand what and who the training is for.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Requirements</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>This includes clarifying the desired outcome, deadlines, formats and methodologies.</p>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Tasks</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>Finally, we should evaluate the tasks involved to ensure complete understanding.</p>
+				</div>
+                </div>
+            </div>
+        </div>
+    </div>
+			</div>
+		
+		<div class="process-pane" id="design">
+		<div class="row">
+			<div class="cont" style="margin-right:20px;">
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Objectives</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>During this phase, the team will identify objectives for the final material.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Delivery Format</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>Based on requirements and objectives, we will decide on the most optimal delivery format to begin working.</p>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Prototype</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>Finally, we will design an initial prototype to allow stakeholders to give input.</p>
+				</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+		
+		<div class="process-pane" id="development">
+		<div class="row">
+			<div class="cont" style="margin-right:20px;">
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>Based on the prototype and stakeholder feedback, we will fully build out the design elements for the material.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Develop Materials</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>Once design is complete, we will add all of the necessary learning content and begin final review</p>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Review</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>During review, we will proof and edit the material, ensuring that there are no issues or difficulties with the design or language and making sure the objectives are met.</p>
+				</div>
+                </div>
+            </div>
+        </div>
+    </div>
+			</div>
+		<div class="process-pane" id="implementation">
+		<div class="row">
+			<div class="cont" style="margin-right:20px;">
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Delivery</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>Once review is passed, the material will be pilot tested with learners to get feedback on the material</p>
+                </div>
+            </div>
+        </div>
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Training</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>Once the pilot test is completed, we will begin making the material available to all requisite employees.</p>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Execution</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>Finally, we will ensure that employees are made aware of the new material and are given clear instructions on how to access it.</p>
+				</div>
+                </div>
+            </div>
+        </div>
+    </div>
+			</div>
+		<div class="process-pane" id="evaluation">
+		<div class="row">
+			<div class="cont" style="margin-right:20px;">
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Collect</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>During this time, we collect data and feedback from learners over a period of time.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Interpret</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>Once sufficient data is collected, we will interpret it to identify issues and sticking points and ensure the goals and requirements were met</p>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="col crd">
+            <div class="face face1">
+                <div class="cntnt u-text-center">
+                    <i class="fas fa-bullseye fa-2x" style="padding-right:5px;"></i>
+                    <h3>Share</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="cntnt u-text-center">
+                    <p>Finally, we will identify and share potential improvements and relevant metrics from the data interpretation to stakeholders.</p>
+				</div>
+                </div>
+            </div>
+        </div>
+    </div>
+			</div>
+<!--
 			<div class="col frame u-text-center" style="margin-right:15px;"><em class="fa fa-search fa-lg" style="padding-top:25px;"></em>
-				<h6>Analysis</h6>
+				<h6>Needs</h6>
 				<p>Needs<br>Requirements<br>Tasks</p>
 			</div>
 			<div class="col frame u-text-center" style="margin-right:15px;"><em class="fas fa-bullseye fa-lg" style="padding-top:25px;"></em>
-				<h6>Design</h6>
+				<h6>Requirements</h6>
 				<p>Objectives <br> Delivery Format <br> Prototype</p>
 			</div>
 			<div class="col frame u-text-center" style="margin-right:15px;">
 				<i class="far fa-edit fa-lg" style="padding-top:25px;"></i>
-				<h6>Development</h6>
+				<h6>Tasks</h6>
 				<p>Design<br>Develop Materials<br>Review</p>
 			</div>
-			<div class="col frame u-text-center" style="margin-right:15px;"><em class="far fa-user fa-lg" style="padding-top:25px;"></em>
-				<h6>Implementation</h6>
-				<p>Delivery<br>Training<br>Execution</p>
-			</div>
-			<div class="col frame u-text-center"><em class="far fa-thumbs-up fa-lg" style="padding-top:25px;"></em>
-				<h6>Evaluation</h6>
-				<p>Collect <br> Interpret <br> Share</p>
-			</div>
+-->
+			
 		</div>
 
 	</div>
 	<div class="divider"></div>
 </section>
+	<script>
+		function onTabClick(event) {
+			let activeTabs = document.querySelectorAll('.active');
+
+			// deactivate existing active tab and panel
+			activeTabs.forEach(function (tab) {
+				tab.className = tab.className.replace('active', '');
+			});
+
+			// activate new tab and panel
+			event.target.parentElement.className += ' active';
+			document.getElementById(event.target.id.split('#')[1]).className += ' active';
+		}
+
+		const element = document.getElementById('process-tabs');
+
+		element.addEventListener('click', onTabClick, false);
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	
 <section id="formats">
 	<div class="content">
 		<div class="u-text-center content">
@@ -887,13 +1240,19 @@ into our designs.</div>
 					<div class="frame__subtitle u-text-center">Used to help learners quickly access simple, straight-forward information they need to perform on-the-job tasks.</div>
 					
 				</div>
-				<div class="frame__body">
-					<!-- Insert other controls here -->
-				</div>
-				<div class="frame__footer">
-					<!-- Insert some controls here -->
-				</div>
+				<div class="frame__body u-text-center">
+					<button class="btn-transparent offset-center">
+					<a href="#ex1" rel="modal:open"><span>EXAMPLE</span>
+					</a>
+				</button>
+					
+</div>
+	
 			</div>
+	<div id="ex1" class="modal">
+  <p>Test</p>
+  <a href="#" rel="modal:close">Close</a>
+</div>
 			<div class="col frame" style="margin-right:20px;">
 				<div class="frame-header">
 					<div class="frame__title u-text-center"><strong>eLearning</strong></div>
@@ -902,12 +1261,13 @@ into our designs.</div>
 before being in a real situation.</div>
 				</div>
 				<div class="frame__body">
-					<!-- Insert other controls here -->
+					<button class="btn-transparent offset-center">
+					<a href="./stoelting/index.html"><span>EXAMPLE</span>
+					</a>
+				</button>
+					
 				</div>
-				<div class="frame__footer">
-					<!-- Insert some controls here -->
 				</div>
-			</div>
 			<div class="col frame" style="margin-right:20px;">
 				<div class="frame-header">
 					<div class="frame__title u-text-center"><strong>ILT</strong></div>
@@ -917,23 +1277,25 @@ before being in a real situation.</div>
 					</div>
 				</div>
 				<div class="frame__body">
-					<!-- Insert other controls here -->
-				</div>
-				<div class="frame__footer">
-					<!-- Insert some controls here -->
+					<button class="btn-transparent offset-center">
+					<a href="#ex1" rel="modal:open"><span>EXAMPLE</span>
+					</a>
+				</button>
+					
 				</div>
 			</div>
 			<div class="col frame">
 				<div class="frame-header">
 					<div class="frame__title u-text-center"><strong>Video</strong></div>
 					<br>
-					<div class="frame__subtitle u-text-center">Used to communicate information at the point of need and at the specific location where that information is needed.</div>
+					<div class="frame__subtitle u-text-center">Used to communicate information at the point and location where that information is needed.</div>
 				</div>
 				<div class="frame__body">
-					<!-- Insert other controls here -->
-				</div>
-				<div class="frame__footer">
-					<!-- Insert some controls here -->
+					<button class="btn-transparent offset-center">
+					<a href="#ex1" rel="modal:open"><span>EXAMPLE</span>
+					</a>
+				</button>
+					
 				</div>
 			</div>
 		</div>
