@@ -653,7 +653,7 @@
 
 .cont .crd .face.face1{
     position: relative;
-    background: #e34c57;
+    background: #da291c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4717,7 +4717,7 @@ section {
 }
 
 .redline {
-    border-left: 7px solid #E34C57;
+    border-left: 7px solid #da291c;
 }
 
 .toppad {
@@ -6044,7 +6044,7 @@ video.video-fullscreen {
     --cirrus-fg: #374054;
     --cirrus-bg: #fff;
 
-    --cirrus-primary: #f03d4d;
+    --cirrus-primary: ##da291c;
     --cirrus-primary-light: #ffdadd;
     --cirrus-accent-hover: #d62939;
     --cirrus-accent-border: #c21b2b;
