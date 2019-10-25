@@ -786,7 +786,7 @@
 .drop ul li i:before, ul li i:after {
   content: "";
   position: absolute;
-  background-color: #ff6873;
+  background-color: #da291c;
   width: 3px;
   height: 9px;
 }
@@ -3934,9 +3934,17 @@ input:not([type=checkbox]):not([type=radio]):not([type=submit]).input-contains-i
     flex: 0 0 auto;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
+	height: 20%;
     padding: 1rem;
 }
 .frame .frame__header {
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  height: 20%;
+}
+
+.frame .color__frame__header {
   flex: 0 0 auto;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -3954,8 +3962,17 @@ input:not([type=checkbox]):not([type=radio]):not([type=submit]).input-contains-i
     flex: 1 1 auto;
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
-    overflow-y: auto; /* Show the scrollbar when needed */
-    padding: 0 1.5rem;
+	height: 40%;
+    overflow-y: visible; /* Show the scrollbar when needed */
+}
+.frame .frame__body .fbt {
+	display: table;
+	height: 100%;
+}
+
+.frame .frame__body .fbt .fbti {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .frame .frame__title {
