@@ -3948,7 +3948,7 @@ input:not([type=checkbox]):not([type=radio]):not([type=submit]).input-contains-i
   flex: 0 0 auto;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
-  height: 20vh;
+  height: 15vh;
 }
 
 /* The frame navbar can be used with level or header classes to create a navigation menu */
